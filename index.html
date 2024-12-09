@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SideBar</title>
     <style>
+
     body{
         background-color: rgb(197, 233, 195);
         width: 100%;
@@ -62,9 +63,9 @@
     </style>
 </head>
 <body>
-    <i class="fa-solid fa-bars menubar" id="menu"></i>
+    <i class="fa-solid fa-bars menubar" id="menu" onclick="openSidebar()"></i>
     <div class="sidebar" id="sidebar">
-        <div class="close-menu">
+        <div class="close-menu"  onclick="closeSidebar()">
             <i class="fa-solid fa-xmark"></i>
         </div>
         <div>
@@ -90,8 +91,11 @@
                 <i class="fa-solid fa-right-from-bracket menu-icon"></i>
                 <a href="" class="menu-text">Logout</a>
             </div>
-        </div>
-        
+        </div> 
     </div>
+    <script>
+        const sidebarElement = document.getElementById("sidebar")
+        const menuElement = document.getElementById("menu")
+    </script>
 </body>
 </html>
