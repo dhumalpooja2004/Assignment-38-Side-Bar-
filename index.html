@@ -96,6 +96,14 @@
     <script>
         const sidebarElement = document.getElementById("sidebar")
         const menuElement = document.getElementById("menu")
+        function openSidebar(){
+            sidebarElement.style.visibility ="visible";
+            menuElement.style.visibility = "hidden";
+        }
+        function closeSidebar(){ 
+            sidebarElement.style.visibility ="hidden";   
+            menuElement.style.visibility = "visible";
+        }
     </script>
 </body>
 </html>
